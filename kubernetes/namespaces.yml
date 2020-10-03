@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: k8s-scaling
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: message-transformer
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: message-dispatcher
