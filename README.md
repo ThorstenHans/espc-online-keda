@@ -15,7 +15,7 @@ Verify you have installed and configured the following software on your system
 
 The sample application consists of three major components.  
 
-The [Message Producer](src/MessageProducer), which is responsible to publish messages to the Azure Storage Account Queue. 
+The [Message Producer](src/MessageProducer), which is responsible to publish messages to the Azure Storage Account Queue.
 
 The [Message Transformer](src/MessageTransformer) , which is responsible to transform messages from the inbound Azure Storage Account Queue, and publish messages of a different format to another Azure Storage Account Queue.
 
