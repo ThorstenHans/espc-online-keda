@@ -28,7 +28,7 @@ namespace MessageProducer
 
             var queueClient = new QueueClient(config.ConnectionString, "aaa-tasks");
 
-            Parallel.For(1, 100000, (i) =>
+            Parallel.For(1, 10, (i) =>
              {
                  var t = new Task("Azure Function message no {0}.", i);
                  var message = JsonSerializer.Serialize(t, serializerSettings);
