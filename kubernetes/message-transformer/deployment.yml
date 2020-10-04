@@ -20,7 +20,7 @@ spec:
         image: espc2020.azurecr.io/functions/transformer:0.0.1
         env:
         - name: AzureFunctionsJobHost__functions__0
-          value: MessageReverser
+          value: MessageTransformer
         envFrom:
         - secretRef:
             name: az-storage-auth
@@ -50,6 +50,6 @@ spec:
   triggers:
   - type: azure-queue
     metadata: 
-      queueLength: '3'
+      queueLength: '15'
       connection: ESPC2020StorageAccount
       queueName: aaa-tasks 

@@ -51,7 +51,7 @@ spec:
   - type: azure-queue
     metadata:
       type: queueTrigger 
-      queueLength: '3'
+      queueLength: '15'
       connection: ESPC2020StorageAccount
       queueName: aaa-transformed
       name: queueItem
